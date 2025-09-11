@@ -1,5 +1,84 @@
-body{
-    background-color: rgb(86, 61, 102);
-    color: aliceblue;
-    text-align: left;
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    /* sticky header (make it not move when scroll) */
+    /* credit:https://www.w3schools.com/howto/howto_js_sticky_header.asp  */
+    position: sticky;
+    top: 0;
+    padding: 10px 16px;
+    background: rgb(0, 0, 0,0.4);
+    color: #f1f1f1;
+    z-index: 1000;
+
+}
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+    text-align: center;
+    font-size: small;
+
+    /* credit: https://cssgradient.io/ */
+    background: #2a2c9b;
+    background: linear-gradient(90deg, rgba(42, 44, 155, 0.97) 0%, rgba(204, 202, 188, 1) 100%);
+
+    color: beige;
+    /* credit: https://html-css-js.com/css/generator/text-shadow/ */
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+input,textarea,button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+textarea{
+    min-height: 100px;
+    /* display: block;
+    width: 100%;
+    padding: 10px;
+    border:  2px solid black;
+    border-radius: 5px;
+    background: white;
+    color: black; */
+    resize: vertical;
+}
+
+button:hover{
+    background-color: #555;
+}
+
+.container{
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px; 
+    box-shadow: 0 4px rgba(0, 0, 0,0,  1)
 }

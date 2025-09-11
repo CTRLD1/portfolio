@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,58 @@
     <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li a href="#about">About Me</li>
-            <li a href="#projects">Projects</li>
-            <li a href="#contact">Contact</li>
-        </ul>
-
-    </nav>
-
     <header>
-        <h1>Hi, I'm Danah!</h1>
-        <p>your fututre software engineer</p>
+        <nav>
+            <ul>
+                <li a href="#about">About Me</li>
+                <li a href="#projects">Projects</li>
+                <li a href="#contact">Contact</li>
+            </ul>
+        </nav>
     </header>
+
+    <main>
+
+        <section id="about">
+            <div class="container">
+                <h1>Hi, I'm Danah!</h1>
+                <p>your fututre software engineer</p>
+            </div>
+        </section>
+
+        <section id="pojects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>project 1 description</p>
+                </div>
+
+
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>project 2 description</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="your name:">
+                <input type="email" placeholder="your email:">
+                <textarea placeholder="type your message here!"></textarea>
+                <button type="send">send</button>
+            </form>
+            </div>
+        </section>
+    </main>
+
+
 </body>
+
 </html>

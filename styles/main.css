@@ -7,7 +7,7 @@ header {
     position: sticky;
     top: 0;
     padding: 10px 16px;
-    background: rgb(0, 0, 0,0.4);
+    background: rgb(0, 0, 0, 0.4);
     color: #f1f1f1;
     z-index: 1000;
 
@@ -15,7 +15,6 @@ header {
 
 
 body {
-
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -44,21 +43,24 @@ body {
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
 }
-input,textarea,button{
+
+input,
+textarea,
+button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 12px;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     /* display: block;
     width: 100%;
@@ -70,15 +72,43 @@ textarea{
     resize: vertical;
 }
 
-button:hover{
+button:hover {
     background-color: #555;
 }
 
-.container{
+.container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px; 
-    box-shadow: 0 4px rgba(0, 0, 0,0,  1)
+    border-radius: 10px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0, 1)
+}
+
+
+.projects-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    flex: 0 0 45%;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: rgb(106, 102, 108);
+    border-radius: 8px;
+    text-align: center;
+    min-height: 150px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #232121;
+    color: white;
+    text-align: center;
 }

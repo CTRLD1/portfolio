@@ -81,7 +81,7 @@ button:hover {
     padding: 20px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    box-shadow: 0 4px rgba(0, 0, 0, 0, 1)
+    box-shadow: 0 4px rgba(0, 0, 0, 0, 1);
 }
 
 
@@ -89,6 +89,7 @@ button:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project {
@@ -102,6 +103,7 @@ button:hover {
     min-height: 150px;
     flex-direction: column;
     justify-content: center;
+
 }
 
 
@@ -121,4 +123,32 @@ button:hover {
     display: block;
     margin: 0 auto;
 
+}
+
+/* From Uiverse.io by ZacharyCrespin */ 
+button {
+  transition: all 0.5s;
+  font-size: 12px;
+  padding: 1ch 2ch;
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  border-radius: 2px;
+  box-shadow:
+    2px 2px 0px hsl(0, 0%, 90%),
+    4px 4px 0px hsl(0, 0%, 80%),
+    6px 6px 0px hsl(0, 0%, 70%),
+    8px 8px 0px hsl(0, 0%, 60%),
+    10px 10px 0px hsl(0, 0%, 50%),
+    12px 12px 0px hsl(0, 0%, 40%),
+    14px 14px 0px hsl(0, 0%, 30%),
+    16px 16px 0px hsl(0, 0%, 20%),
+    18px 18px 0px hsl(0, 0%, 10%);
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 50%);
+  color: #fff;
+  box-shadow: none;
 }

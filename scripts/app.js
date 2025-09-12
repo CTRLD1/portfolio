@@ -3,10 +3,12 @@ function init() {
 
 
     // 1 cache our element
-    const buttons = document.querySelectorAll('.project-Bttn')
+    const buttons = document.querySelectorAll('.projectBttn')
+    const emailForm = document.querySelector('#emailForm')
 
 
     // 3 write a function to run when the event happens
+    
 
 
 
@@ -18,6 +20,16 @@ function init() {
             window.open(link, '_blank');
         })
     })
+
+    emailForm.addEventListener('submit',(event)=>{
+        event.preventDefault();
+        alert('email was sent! 🫡');
+        
+        
+    });
+    
+
+    
 
 }
 

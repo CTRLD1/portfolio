@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -24,7 +25,8 @@
 
         <section id="about">
             <div class="container">
-                <img class="myLogo" src="https://fv5-3.files.fm/thumb_show.php?i=aqn9y3wqss&view&v=1&PHPSESSID=324affbf61bd0ed63da91dc095201f38cbb4c3e9">
+                <img class="myLogo"
+                    src="https://fv5-3.files.fm/thumb_show.php?i=aqn9y3wqss&view&v=1&PHPSESSID=324affbf61bd0ed63da91dc095201f38cbb4c3e9">
                 <h1>Hi, I'm Danah!</h1>
                 <p>your fututre software engineer</p>
             </div>
@@ -32,17 +34,21 @@
 
         <section id="pojects" class="container">
             <h2>My Projects</h2>
-            <div id="projects-container"  class="projects-flex">
+            <div id="projects-container" class="projects-flex">
                 <div class="project">
                     <h3>Graduation project</h3>
-                    <button class="project-Bttn" data-link="https://www.figma.com/proto/nyfWrByW9hSfBO6lGPkPou/VitaHale-dd?node-id=0-1&t=H8Ffm6PUayrftaNM-1">Click for more!</button>
+                    <button class="projectBttn"
+                        data-link="https://www.figma.com/proto/nyfWrByW9hSfBO6lGPkPou/VitaHale-dd?node-id=0-1&t=H8Ffm6PUayrftaNM-1">Click
+                        for more!</button>
                     <p>i will put project 1 description later</p>
-                </div> 
+                </div>
 
 
-                 <div class="project">
+                <div class="project">
                     <h3>Project 2</h3>
-                    <button class="project-Bttn" data-link="https://www.figma.com/proto/BJ9azjP1bh1oI6SESSXq8r/Wajaaha-app?node-id=0-1&t=i1M3AkpuS7ihSgNl-1">Click for more!</button>
+                    <button class="projectBttn"
+                        data-link="https://www.figma.com/proto/BJ9azjP1bh1oI6SESSXq8r/Wajaaha-app?node-id=0-1&t=i1M3AkpuS7ihSgNl-1">Click
+                        for more!</button>
                     <p>i will put project 2 description later</p>
         </section>
 
@@ -50,7 +56,7 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <form>
+                <form id="emailForm">
                     <input type="text" placeholder="your name:">
                     <input type="email" placeholder="your email:">
                     <textarea placeholder="type your message here!"></textarea>
@@ -59,9 +65,20 @@
             </div>
         </section>
     </main>
-    <footer class="footer">just testing if it works</footer>
+
+    <!-- Icons from fontawesome -->
+    <footer class="footer">
+        <a href="mailto:Danah.Alsubaie2@gmail.com"><i class="fa-solid fa-envelope" style="color: #9769b0;"></i></a>
+        <a href="https://github.com/CTRLD1"><i class="fa-brands fa-github" style="color: #9769b0;"></i></a>
+        <a href="https://discord.com/users/1408474390735097914"><i class="fa-brands fa-discord"
+                style="color: #9769b0;"></i></a>
+        <!-- my Linkedin account is not ready at the moment but i will add an icon for now until its ready -->
+        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"style="color: #9769b0;"></i></a>
+
+    </footer>
+
 
 
 </body>
 
-</html> 
+</html>

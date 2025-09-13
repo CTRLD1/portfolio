@@ -36,8 +36,6 @@ body {
         display: flex;
         gap: 20px;
     }
-
-
 }
 
 form {
@@ -169,4 +167,17 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+/* the GIF */
+#contact {
+    position: relative;
+}
+
+#silksonicGIF {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+    height: auto;
 }

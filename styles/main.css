@@ -166,3 +166,13 @@ button:hover {
     background-color: #9769b0 ;
     box-shadow: none;
 }
+
+#myInfo{
+    margin-top: 10px;
+    padding: 10px;
+    background: #9769b0;
+    border-radius: 5px;
+}
+.hidden{
+    display: none;
+}

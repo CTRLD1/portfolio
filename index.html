@@ -8,6 +8,10 @@
     <script src="./scripts/app.js"></script>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font from CDN fonts -->
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+                
+
 </head>
 
 <body>
@@ -71,17 +75,19 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <form id="emailForm">
-                    <input type="text" placeholder="your name:">
-                    <input type="email" placeholder="your email:">
-                    <textarea placeholder="type your message here!"></textarea>
-                    <button type="send">send</button>
+                <!-- here i  made the form work using Getform -->
+                <form class="emailForm" action="https://getform.io/f/bvrmzvjb" method="POST">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Type your message here!" required></textarea>
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+
+                    <button type="submit">Send</button>
                 </form>
-                <img id="silksonicGIF" src="https://media2.giphy.com/media/w8ZKYmhVinvLXwVi3G/giphy.gif?cid=9b38fe91ohz5ir217p2mxbejhqzbi3ptvha0at0h03wc12f7&ep=v1_gifs_username&rid=giphy.gif&ct=s">
+                <img id="silksonicGIF"
+                    src="https://media2.giphy.com/media/w8ZKYmhVinvLXwVi3G/giphy.gif?cid=9b38fe91ohz5ir217p2mxbejhqzbi3ptvha0at0h03wc12f7&ep=v1_gifs_username&rid=giphy.gif&ct=s">
             </div>
         </section>
-
-        <!-- <img id="silksonicGIF" src="https://media2.giphy.com/media/w8ZKYmhVinvLXwVi3G/giphy.gif?cid=9b38fe91ohz5ir217p2mxbejhqzbi3ptvha0at0h03wc12f7&ep=v1_gifs_username&rid=giphy.gif&ct=s"> -->
     </main>
 
     <!-- Icons from fontawesome -->
@@ -94,9 +100,6 @@
         <a href="https://linkedin.com"><i class="fa-brands fa-linkedin" style="color: #9769b0;"></i></a>
 
     </footer>
-
-
-
 </body>
 
 </html>

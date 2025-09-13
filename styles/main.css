@@ -20,7 +20,9 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: small;
+    font-size: 10px;
+    /* credit: CDN fonts */
+    font-family: 'Public Pixel', sans-serif;
 
     /* credit: https://cssgradient.io/ */
     background: #2a2c9b;
@@ -69,7 +71,6 @@ textarea {
     box-shadow: 0 4px rgba(0, 0, 0, 0, 1);
 }
 
-
 .projects-flex {
     display: flex;
     gap: 20px;
@@ -78,6 +79,7 @@ textarea {
 }
 
 .project {
+    font-size: 8px;
     flex: 0 0 45%;
     display: flex;
     border: 1px solid #ccc;
@@ -96,7 +98,6 @@ textarea {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
-
 
 
 .footer {
@@ -181,3 +182,4 @@ button:hover {
     width: 150px;
     height: auto;
 }
+

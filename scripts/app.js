@@ -4,15 +4,12 @@ function init() {
 
     // 1 cache our element
     const buttons = document.querySelectorAll('.projectBttn')
-    const emailForm = document.querySelector('#emailForm')
+    const email = document.querySelector('.emailForm')
     const abtMeBttn = document.querySelector('.abtMeBttn')
     const myInfo = document.querySelector('#myInfo')
 
 
     // 3 write a function to run when the event happens
-
-
-
 
 
     // 2 add an event listener

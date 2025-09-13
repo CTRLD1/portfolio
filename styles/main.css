@@ -19,8 +19,6 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-
-
     text-align: center;
     font-size: small;
 
@@ -61,19 +59,8 @@ button {
 
 textarea {
     min-height: 100px;
-    /* display: block;
-    width: 100%;
-    padding: 10px;
-    border:  2px solid black;
-    border-radius: 5px;
-    background: white;
-    color: black; */
     resize: vertical;
 }
-
-/* button:hover {
-    background-color: #9769b0;
-} */
 
 .container {
     max-width: 900px;
@@ -103,8 +90,15 @@ textarea {
     min-height: 150px;
     flex-direction: column;
     justify-content: center;
-
+    /* transition idea from: https://www.w3schools.com/css/css3_transitions.asp */
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
 }
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 
 .footer {
@@ -162,17 +156,17 @@ button {
 }
 
 button:hover {
-    /* background-color: hsl(0, 0%, 50%); */
-    background-color: #9769b0 ;
+    background-color: #9769b0;
     box-shadow: none;
 }
 
-#myInfo{
+#myInfo {
     margin-top: 10px;
     padding: 10px;
     background: #9769b0;
     border-radius: 5px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }

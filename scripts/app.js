@@ -4,7 +4,6 @@ function init() {
 
     // 1 cache our element
     const buttons = document.querySelectorAll('.projectBttn')
-    const email = document.querySelector('.emailForm')
     const abtMeBttn = document.querySelector('.abtMeBttn')
     const myInfo = document.querySelector('#myInfo')
 
@@ -20,12 +19,6 @@ function init() {
         })
     })
 
-    emailForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        alert('email was sent! 🫡');
-
-
-    });
 
     abtMeBttn.addEventListener('click', () => {
         myInfo.classList.toggle('hidden');
